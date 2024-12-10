@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"
+    type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css"> 
+  <link rel="icon" type="image/x-icon"
+  href="darwin.png" >
+  <title>sitio AG 8bit</title>
+</head>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const scrollButton = document.getElementById('scroll-button');
+
+    // Mostrar/Ocultar el botón según la posición de scroll
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 200) {
+        scrollButton.style.display = 'block';
+      } else {
+        scrollButton.style.display = 'none';
+      }
+    });
+
+    // Funcionalidad para llevar al inicio de la página
+    scrollButton.addEventListener('click', function() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  });
+</script> 
+<body>
+  <div id="nescss">
+    <header :class="{ sticky: scrollPos > 50 }" id="inicio">
+      <div class="container">
+        <nav style="padding: 20px; border-bottom: 3px solid #ccc; margin-bottom: 60px;">
+          <div class="container">
+            <h1 style="margin-bottom: 0;">
+              <img class="nes-avatar is-large" alt="Image Darwin" src="darwin.png" style="image-rendering: pixelated;">
+              Mi Aventura Gráfica ＼(^_^)／
+            </h1>
+            <a href="#propuesta" class="nes-btn is-primary">LA PROPUESTA</a>
+            <a href="#proceso" class="nes-btn is-success">EL PROCESO</a>
+            <a href="#presentacion" class="nes-btn is-warning">LA PRESENTACION</a>
+          </div>
+        </nav>
+        <div class="social-buttons">
+          <p>mis trabajos➜</p>
+          <div class="share">
+            <a href="https://github.com/sara-arriola/pmiw" target="_blank"><i class="nes-icon github"></i></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div id="utilities">
+      <div id="scroll-button" class="nes-btn is-primary" style="position: fixed; bottom: 20px; right: 20px; display: none;">
+      <h2> 🔺  </h2>        
+    </div>
+    </div>    
+
+  <div class="container">
+    <div class="image-container">
+      <img src="https://i.pinimg.com/originals/e8/9c/03/e89c03333f98c5c7e72e31fb29da76bf.gif" alt="Image">
+    </div>
+    <br>
+    <h2 style="color: rgb(0, 0, 0);" id="propuesta"><i class="nes-icon star"></i> LA PROPUESTA</h2>
+    <br>
+    <div class="container" style="margin-bottom: 50px; margin-left: 15%;">
+      <div class="row">
+        <div class="col-sm-9 col-xs-12">
+          <div class="nes-balloon from-left">
+            <h3 style="color: #8400ff;"><span>Tematica:</span></h3>
+            <p>Todo comenzó cuando a la comisión se nos propuso basar nuestra aventura gráfica en un universo ya existente, el de una serie animada, y con este crear una historia con escenarios y personajes pertenecientes al mismo.</p>
+          </div>
+          <div class="col">
+              <img src="icon.png" alt="Mi Imagen" class="custom-image" style="border: 5px solid #8400ff; border-radius: 66%; margin-left: -13%;">
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="image-container">
+      <img src="https://i.pinimg.com/736x/84/1a/e9/841ae9dc52c700c0cf3747389074502d.jpg" alt="Image" style="border-radius: 5%;border: 10px solid  #ff0000;image-rendering: pixelated;">
+      <div class="row" style="justify-content: center; padding-left: 10%;">
+        <div class="col-xs-15" style="text-align: center; padding-top: 7%; padding-bottom: 0% ;color: #ffffff; background: #000000bd;">
+          <h3 style="letter-spacing: 2px;">Nuestra Aventura ocurre en Elmore, la singular ciudad en la que habitan nuestros protagonistas Gumball y Darwin.
+          La razón por la que elegí esta serie es simple: la amo.
+          Es mi infancia y ahora adultes. Con mis casi veinte años sigo esperando a que saquen una nueva temporada •_•
+          </h3>
+          <div class="dropdown" style="padding-top: 15px;">
+            <button id="dropdownButton">¿Queres saber más sobre la serie para (tal vez) entender mi obsesión con ella?</button>
+            <div class="dropdown-content" id="dropdownMenu" style="padding:0.7%;">
+              <a href="https://es.wikipedia.org/wiki/The_Amazing_World_of_Gumball">pag en Wikipedia</a>
+              <a href="https://theamazingworldofgumball.fandom.com/wiki/The_Amazing_World_of_Gumball_Wiki">Gumball fandom Wiki</a>
+              <a href="https://www.youtube.com/@TheAmazingWorldofGumball">canal de Youtube</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <br>
+  <br>
+  <h2 class="rainbow-text" style="text-align: center;">
+    <i class="nes-icon is-large heart"></i>
+    <span class="red">E</span>
+    <span class="orange">L</span>
+    <span class="yellow">M</span>
+    <span class="green">O</span>
+    <span class="blue">R</span>
+    <span class="indigo">E</span>
+    <span> </span>
+    <span class="violet">G</span>
+    <span class="red">L</span>
+    <span class="orange">I</span>
+    <span class="yellow">T</span>
+    <span class="green">C</span>
+    <span class="blue">H</span>
+    <i class="nes-icon is-large heart"></i>
+</h2>
+  <div class="col-xs-17" style="text-align:justify ;padding: 3%;color: #efa0ff; background: rgb(0, 26, 255);">
+    Gumball y Darwin disfrutan de una tarde tranquila navegando por el Internet, viendo adorables videos de gatitos durmiendo. Todo parece normal hasta que, de repente, su computadora empieza a fallar y se apaga misteriosamente. Sin previo aviso, Darwin desaparece sin dejar rastro. Antes de que Gumball pueda entender lo que está ocurriendo, la computadora se reinicia, mostrando una notificación de ElmorePlus. A través de mensajes de un usuario desconocido, Gumball se enfrenta a una serie de decisiones que determinarán el destino de su hermano, y posiblemente el suyo.
+  </div>
+
+  <div class="nes-container with-title is-centered">
+    <p class="title" style="background: #ffcc00;">¿De dónde salió esto?</p>
+    <p style="color: #ffcc00;">Algo que tenía en claro desde que se nos propuso esto era que quería que todo se de dentro del espacio virtual, ¿por qué? Te lo explico ^^
+      En la serie hay un episodio titulado "El Internet", en este a los chicos les sucede una serie de eventos desafortunados, como siempre, y terminan enfrentandose con el Internet, un tipo con cabeza de computadora y extremidades de cables y ¿CPUs? no sé, es bastante confusa la presopopeya que hicieron de la computadora. Esto más la hiperfijación que tuve en su momento (cuando tenía 14 años) con el juego Doki Doki Literature Club me llevó a pensar en hacer este tonto relato y minijuego..</p>
+  </div>  
+  <br>
+  <h2 style="color: rgb(0, 0, 0);" id="proceso"><i class="nes-icon star"></i> EL PROCESO</h2>
+  <br> 
+
+  <div class="col-sm-9 col-xs-12">
+  <section class="message -right">
+    <!-- Balloon -->
+    <div class="nes-balloon from-right" style="width: 100%;">
+      <p>Antes de arrancar la primera etapa de este trabajo final creamos un flujo que explica los posibles sucesos que se van dando en esta aventura gráfica que hasta ese entonces tan solo se encontraba en nuestras cabezas...
+      <a href="https://www.figma.com/board/W4owlTWQ7c9FgqnzfXRYFR/Untitled?node-id=0-1&t=GSFFecpIcTRiboWH-1">⇢ acceso al flujo en Figma ⇠</a>
+      </p>
+    </div>
+    <div class="col">
+      <img src="icon.png" alt="Mi Imagen" class="custom-image" style="border: 5px solid #8400ff; border-radius: 66%;margin-left: 100%;">
+    </div>  </section>
+</div>
+
+<div class="image-container">
+  <img src="flujo.png" alt="Image">
+</div>
+
+<a href="#" class="nes-badge" style="width: 40%; margin-left: 30%;">
+  <span class="is-success"><h2>Primera parte</h2></span>
+</a>
+<div class="nes-container is-rounded is-dark">
+  <p>Luego de tener en claro nuestra base para este trabajo, comenzamos a hacer nuestra aventura gráfica usando el lenguaje p5.js en el editor de Processing.
+    Y bueno, se podría decir que pasaron cositas ToT <br>
+    En fin, el destino se entre cruzó, y para la fecha de la entrega no llegamos a completar la aventura :( <br>
+    SIN EMBARGO ¡para el recuperatorio lo conseguimos! :D<br>
+    Aprobamos y creíamos que lo peor ya había pasado, pero tan solo era la calma antes de la tormenta...
+    </p>
+</div>
+<br>
+<a href="#" class="nes-badge" style="width: 40%; margin-left: 30%;">
+  <span class="is-success"><h2>Segunda parte</h2></span>
+</a>
+<div class="nes-container is-rounded is-dark">
+  <p>Un minijuego. En nuestras cabezas sonaba bastante simple, es decir, es mini ¿no? No debía de ser algo tan... complicado.
+    Pero lo fue, y mucho.
+    En esta segunda etapa se nos introdujo a la programación orientada a objetos y al uso de clases.<br>
+    Clases, clases y más clases.<br>
+    Pero no todo fue sufrimiento, si bien en el camino perdí a mi compañera (ACLARO: no se murió ni nada, solo abandonó la cursada :p), el resultado de muchas horas perdidas de sueño dio sus frutos.
+    En fin, si te interesa jugar el famoso minijuego tan solo tenes que apretar el botón que se encuentra debajo (^з^)-☆
+    </p>  
+    <div class="col"> 
+      <a href="tpfinalparte2\index.html" target="_blank">
+        <img src="blinkiesCafe-8p.gif" alt="Mi Imagen" class="custom-image" style="width: 35%;">
+      </a>
+    </div>
+    
+    <br>
+    <span class="nes-text is-primary">Si te interesa saber sobre mi código y cómo se uso la POO para realizar este minijuego te dejó un vídeo que realicé hablando un poco sobre eso.</span>
+</div>
+<iframe style="border: #04ff00; border-style: dashed; margin: auto;" width="560" height="315" src="https://www.youtube.com/embed/R5Ubst1SQa8?si=nQRM5eZdy1le_Nfy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<br>
+<a href="#" class="nes-badge" style="width: 40%; margin-left: 30%;">
+  <span class="is-success"><h2>Tercera parte</h2></span>
+</a>
+<div class="nes-container is-rounded is-dark">
+  <span>¡Nos acercamos al final! ≽^•⩊•^≼</span>
+  <br>
+    <p>
+  Para esta etapa, al igual que en la anterior, use el editor VSC para crear mi archivo .html, y el Framework NES.css para darle su toque retro.
+    Al momento en que estoy escribiendo esto tengo miedo. Si, miedo.
+    </p>      
+    <br>
+    <div class="image-container">
+      <img src="https://i.pinimg.com/736x/b9/b0/23/b9b0233966dfdf164b068f532412798a.jpg" alt="Image" style="border-radius: 5%; width: 55% ;border: 7px solid  #ffae00;image-rendering: pixelated;">
+      <div class="row" style="justify-content: space-around; padding-left: 2%;">
+        <div class="col-xs-17" style="text-align: center; padding-top: 7%; padding-bottom: 0% ;">
+          <p style="width: auto; letter-spacing: 1px;">De nuevo desaprobé la primera instancia del trabajo :( <br>Lo sé, muy triste. <br>
+            No voy a mentir, realmente pensé que me iba a ir bien esta vez, pero aún así acá me encuentro a punto de entregar una nueva carpeta con mi trabajo corregido.
+            Pero bueno, a lo que venimos.<br> En esta instancia se nos dijo crear una página web en la que se pueda visualizar toooodo el proceso de nuestro trabajo final, y bueno... <br>Acá estamos, ¿qué te pareció?      
+            </p> 
+        </div>
+      </div>
+  </div>
+</div>
+<br>
+<h2 style="color: rgb(0, 0, 0);" id="presentacion"><i class="nes-icon star"></i> LA PRESENTACION</h2>
+<label for="nes-input is-dark" style="color: #f9acff;">Hola, ¿todo bien? :3</label>
+<div class="row" style="justify-content: center; padding-left: 10%;">
+  <div class="col-xs-15" style="text-align: center; padding-bottom: 0% ;color: #aa4fff; background: #fbff00c0;">
+    <h3 style="letter-spacing: 2px;"> soy la alumna detrás de esto,<br>
+      Sara Arriola de la Comisión 2.<br>
+      Si bien me la pase contando de lo que sufri haciendo estos trabajos prácticos, debo decir que me encantó. No voy a mentir con que estoy conforme con mis trabajos; tanto a nivel código como estético y del storytelling me hubiera gustado poder hacer algo más elaborado y creativo. Pero bueno, el tiempo existe y fue lo que me faltó para poder llegar a eso. Igualmente, estoy feliz de poder haber llegado hasta esta instancia, y más importante, haber aprendido el potencial de los lenguajes y programas que se nos presentaron en la cursada. Agradecida con los profesores y la universidad por darme estas oportunidades ❤︎
+    </h3>
+  </div>
+</div>
+<img style="padding: 5%; margin-left: 30%;" src="neon.png">
+<h1 style="text-align: center;letter-spacing:-4">
+🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪<br>
+🟪🟪🟪🟪🟪🟪🟥🟥🟪🟪🟪🟪🟪🟪<br>
+🟪🟪🟪🟪🟪🟪🟥🟥🟥🟪🟪🟪🟪🟪<br>
+🟪🟪🟪🟪🟪⬜⬜⬜⬜🟪🟪🟪🟪🟪<br>
+🟪🟪🟪🟪⬜⬛⬜🟨🟨⬛🟪🟪🟪🟪<br>
+🟪🟪🟪🟪⬜⬜⬜🟥🟥⬜🟪🟪🟪🟪<br>
+🟪🟪🟪⬜⬜⬜⬜⬜⬜⬜⬜🟪🟪🟪<br>
+🟪🟪⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜🟪🟪<br>
+🟪🟪⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜🟪🟪<br>
+🟪🟪🟪⬜⬜⬜⬜⬜⬜⬜⬜🟪🟪🟪<br>
+🟪🟪🟫🟨🟨🟨🟨🟨🟨🟨🟨🟫🟪🟪<br>
+🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪<br>
+</h1>
+<a href='https://blinkies.cafe' target='_blank'><img src='https://blinkies.cafe/b/display/blinkiesCafe-badge.gif' alt='blinkies.cafe | make your own blinkies!';></a>
+  <div class="container" style="margin-top: 50px; font-size: 90%;">
+    <div class="row">
+      <div class="col-xs-12" style="text-align: center; color: #000000; background: #ffffffbd;">
+      Hecho con NES.css por Sara Eugenia Arriola Castillo - PMIW 2024      
+      </div>
+    </div>
+  </div>
+  </div> 
+  <script src="tpfinalparte3\tpfinalparte2\index.html"></script>
+</body>
+</html>
